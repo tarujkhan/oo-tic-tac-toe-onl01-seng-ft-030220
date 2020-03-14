@@ -128,7 +128,7 @@ end
 
 def play
   
-  unless over? == true
+  until over? == true
     turn
   end
 
