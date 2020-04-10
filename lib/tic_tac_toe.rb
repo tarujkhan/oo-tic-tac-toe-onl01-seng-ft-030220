@@ -64,7 +64,11 @@ def current_player
 end
 
 def turn
+<<<<<<< HEAD
   input = gets.strip
+=======
+  input = gets.chomp 
+>>>>>>> 3dd967f367b2ad42f7ba7e5b424b19a2d410a023
   index = input_to_index(input)
   if valid_move?(index)
     move(index, current_player)
@@ -77,6 +81,7 @@ end
 
 def won?
  WIN_COMBINATIONS.each do |combo| 
+<<<<<<< HEAD
    
     first_index = combo[0]
     second_index = combo[1]
@@ -139,3 +144,12 @@ def play
   end
 end
 end
+=======
+   binding.pry
+   
+end 
+end 
+
+
+end
+>>>>>>> 3dd967f367b2ad42f7ba7e5b424b19a2d410a023
